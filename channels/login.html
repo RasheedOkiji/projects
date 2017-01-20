@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Login page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="channel.css" />
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+</head>
+	<body>
+		<div class="container">
+			<div class="banner">
+				<img src="images/logo.png" alt="Channel" class="logopic" />hannel
+				<span class="login">
+					<span class='head'><a href="login.html">Login</a></span>
+					<span class='firstname'></span>
+					<span class='head'><a href="createAccount.html">Sign Up</a></span>
+				</span>
+			</div>
+
+			<div class="menu">
+				<ul>
+					<li><a href="index.php">HOME</a></li>
+				</ul>
+			</div>
+			
+			<div class="content">
+				<div class="title">
+					<h2> Please Login</h2>
+				</div>
+				
+				<form method="post" action="login.php">
+					<div class="options">
+						<div class="option">
+							User Name: <input type="text" name="username" id="username" />
+						</div>
+						<div class="option">
+							Password: <input type="password" name="password" id="password" />
+						</div>
+						<div class="option">
+							<input type = "submit" value="Login" name="submit" onclick="return validatePassword();" />
+				            <input type = "reset" value="Reset form" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

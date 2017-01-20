@@ -1,0 +1,339 @@
+/* main containing element */
+.container {
+	font-size: 14px;
+	margin: 10px auto;
+	width: 70%;
+	min-width: 800px;
+	padding: 20px 20px 20px 20px;
+	border: 4px #4b0066 solid;
+	border-radius: 25px;
+	color: #250033;
+	background-color: #f8e6ff;
+	
+	box-shadow:
+    0 0 0 3px #dd80ff,
+    0 0 0 5px #f1ccff,
+	0 0 0 7px #f8e6ff;
+}
+
+/** banner contains logo and signup/login **/
+.banner {
+	border: 3px dashed #4b0066;
+	background-color:white;
+	padding:10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	font-size: 30px;
+	font-family: Century Gothic, Futura, Verdana, Sans-Serif;	
+}
+
+/** this (div) contains all page content including title and main content area **/
+.content {
+	border: 4px solid #4b0066;
+	border-radius: 10px;
+	background-color: white;
+	padding: 5px;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+/** this (div) contains the title h2 **/
+.title {
+	
+}
+
+/** login text on the right side **/
+.login {
+	float: right;
+	text-align: bottom;
+	font-size: 15px;
+}
+
+/** span displays user's first name **/
+/**    uses a right-margin to create space between options **/
+span.firstname {
+	font-size: 12px;
+	color: #dd80ff;
+	margin-right: 15px;
+}
+
+/** login/logout/signup options **/
+span.head {
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+}
+
+/* -----MENU-----*/
+/** top menu for navigation **/
+.menu {
+	background-color: #e1adf4;
+	border: 2px solid black;
+	text-align: center;
+	border-radius: 25px;
+	width: 100%;
+	margin: 10px auto;
+}
+/** behavior of links reacting to hovering and selection **/
+a:link {/* unvisited link */
+    color: #250033;
+	text-decoration: none;
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+
+}
+a:visited {/* visited link */
+	color: #250033;
+	text-decoration: none;
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+
+}
+a:hover {/* mouse over link */
+    color: #9600cc;
+	text-decoration: none;
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+}
+a:active {/* selected link */
+    color: #9600cc;
+	text-decoration: underline;
+	-webkit-transition: all 0.20s ease-in-out;
+	-moz-transition: all 0.20s ease-in-out;
+	-ms-transition: all 0.20s ease-in-out;
+	-o-transition: all 0.20s ease-in-out;
+}
+/** menu items font styling **/
+/** use unordered list html tag to stye menu selections **/
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+	overflow: hidden;
+	font-family: Century Gothic, Futura, Verdana, Sans-Serif;
+}
+/** style the indiviual list items inside the unordered list **/
+li {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+	font-weight: bold;
+}
+/*----------------*/
+
+/** we're using h2 to style the heading of each page **/
+h2 {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: #250033;
+	text-shadow: 2px 2px 5px #dd80ff;
+	font-family: Century Gothic, Futura, Verdana, Sans-Serif;
+}
+/*-----------------------------------------------------/
+
+/** style the paragraph text on the page **/
+p {
+	font-family: Century Gothic, Futura, Verdana, Sans-Serif;
+	font-size: 18px;
+}
+/** allow strong text with this span **/
+span.strong {
+	font-weight: bold;
+}
+
+/*-----------------------------------------/
+
+/** the default div behaviour **/
+div {
+	text-align: left;
+	margin: 6px 6px 6px 6px;
+	font-family: Century Gothic, Futura, Verdana, Sans-Serif;
+}
+/*******************************/
+
+
+/****search****/
+span.city {
+	font-size: 13px;
+}
+/**************/
+
+
+/** default form behavior **/
+form {
+	font-family: Century Gothic, Futura, Verdana, Sans-Serif;
+}
+
+/** background for entire page **/
+body{
+	background-image: url(images/BG.jpg);
+}
+
+/** left-side-floating pic allows text to float right and hover **/
+.pic {
+	border-radius: 25px;
+	margin:12px;
+	float: left;
+	-webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+.pic:hover {
+	-webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+	-ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+/** logo img at the top-left and hover **/
+.logopic {
+	height: 72px;
+	width: 72px;
+	transition: width 2s, height 3s;
+}
+.logopic:hover {
+	width: 95px;
+	height: 95px;
+}
+
+
+/** use this class to disallow floating elements to left or right **/
+.clear {
+	clear: left;
+}
+
+/** Mainly for form styling on sets of labels and input **/
+/**  center **/
+div.options {
+	margin: 0px auto;
+	width: 50%;
+    
+}
+/** create some space between each input **/
+div.option {
+	font-weight: 600;
+	margin: 8px 26px 28px 20px;
+	vertical-align: top;  
+}
+
+.inputalign{
+    /**position: absolute;
+    right: 650px; **/
+}
+
+div.usertype{
+    display: none;
+}
+/** table container **/
+div.table {
+	margin: 0px auto;
+	width: 75%;
+	min-width: 600px;
+	max-width: 700px;
+}
+div.table_large {
+	margin: 0px auto;
+	width: 85%;
+	min-width: 700px;
+	max-width: 900px;
+}
+label {
+	
+}
+/** form instructions **/
+#centerinstructions {
+	font-size: 18px;
+	text-align: center;
+}
+
+/** style each feedback **/
+blockquote.feedback {
+  font: 18px/50px normal Tahoma, sans-serif;
+  font-style: italiac;
+  padding-top: 10px;
+  margin: 5px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background-image: url(images/openq.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 65px;
+  
+ }
+ blockquote.feedback span {
+    display: block;
+    background-image: url(images/closeq.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+
+/******** INPUT ***************/
+/** textbox styling **/
+input[type=text], input[type=password] {
+    width: 240px;
+    padding: 2px 2px;
+    margin: 4px;
+    box-sizing: border-box;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+/** textarea styling **/
+textarea {
+	width: 400px;
+	height: 160px;
+	vertical-align: text-top;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	resize: none;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+/** behavior when clicking in a textbox **/
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ece5ff;
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1)
+}
+
+/** behavior when clicking in a textarea **/
+input[type=textarea]:focus, textarea:focus {
+	background-color: #ece5ff;
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+/** TABLES **/
+/** table styling used for displaying artists or even feedback, hisory **/
+table {
+	font-family: Century Gothic, Futura, Verdana, Sans-Serif;
+    width: 100%;
+}
+/** individual row styling within table **/
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #f8e6ff}
+
+th {
+    background-color: #e1adf4;
+    color: #250033;
+}

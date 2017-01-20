@@ -1,0 +1,110 @@
+<!--
+    profile.php
+	Rasheedd Okiji
+    -->
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Create Account</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="channel.css"/>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+        <script type="text/javascript" src="createAccount.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		
+			<div class="banner">
+				<img src="images/logo.png" alt="Channel" class="logopic" />hannel
+				<span class="login">
+					<span class='head'><a href="login.html">Login</a></span>
+				</span>
+			</div>
+
+			<div class="menu">
+				<ul>
+					<li><a href="index.php" >HOME</a></li>
+				</ul>
+			</div>
+		
+			<div class="content">
+				<div class="title">
+					<h2>Create Account</h2>
+				</div>
+				<div class="usertypeA" id="customer">
+					<p id="centerinstructions">All marked entries must be completed!!!</p>
+					</div>
+                
+                <div class ="usertype" id="artist" style="display: none;">
+					<p id="centerinstructions">All entries must be completed!!!</p>
+					</div>
+                
+				<form action="createAccount.php" method="post">
+                    
+                    
+                        <div class="options">
+                        <div >
+							<label style="color:brown;">* Select one option</label>
+                            <input  type="radio" name="artist" value="0" id="userType" checked onclick="changeUser()"/>Customer
+                            <input type="radio" name="artist" value="1" id="userType" onclick="changeUser()"/>Artist
+						</div>
+                    
+					
+						<div class="option">
+							<label style="color:brown;" for="fname">*</label> <label style="color:indigo;" for="pass">First Name: </label>
+							<input class="inputalign" type="text" name="fname" placeholder="First Name" size="30" maxlength="30" id="first" autocomplete="on" />
+						</div>
+						<div class="option">
+							<label style="color:brown;" for="lname">*</label> <label style="color:indigo;" for="pass">Last Name: </label>
+							<input class="inputalign" type="text" name="lname" placeholder="Last Name" size="30" maxlength="30" id="last" autocomplete="on" />
+						</div>
+						<div class="option"> 
+							<label style="color:brown;" for="email">*</label> <label style="color:indigo;" for="pass">Email: </label>
+							<input class="inputalign" type="text" name="email" placeholder="username@umbc.edu" size="30" autocomplete="on" id="email" />
+						</div>
+						<div class="option">
+							<label style="color:brown;" for="uname">*</label> <label style="color:indigo;" for="pass">Username: </label>
+							<input class="inputalign" type="text" name="uname" placeholder="Username" autocomplete="on" size="25" maxlength="25" id="user" onblur="validateUsername(this.value);"/><span id="msgbox"></span>
+						</div>
+						<div class="option">
+							<label style="color:brown;" for="mypass1">*</label> <label style="color:indigo;" for="pass">Password: </label>
+							<input class="inputalign" type="password" name="mypass1" placeholder="Password" autocomplete="off" size="10" maxlength="10" id="pass" />
+						</div>
+                        
+                        <div class="option">
+							<label style="color:brown;" for="mypass2">*</label> <label style="color:indigo;" for="pass">Re-password: </label>
+							<input class="inputalign" type="password" name="mypass2" placeholder="Password" autocomplete="off" size="10" maxlength="10" id="repass" />
+						</div>
+						<div class="option">
+							<label style="color:indigo;" for="ustreet"> Street: </label>
+							<input class="inputalign" type = "text" name="ustreet" placeholder="Street" autocomplete="on" size ="30" maxlength="30" id="street"/>
+						</div>
+						<div class="option">
+							<label style="color:indigo;" for="ucity"> City: </label>
+							<input class="inputalign" type="text" name="ucity" placeholder="City" autocomplete="on" size ="15" maxlength="15" id="city"/>
+						</div>
+						<div class="option">
+							<label style="color:indigo;" for="uzipcode"> Zipcode: </label>
+							<input class="inputalign" type="text" name="uzipcode" placeholder="Zipcode" autocomplete="on" size="5" maxlength="5" id="zipcode"/>
+						</div>
+						<div class="option">
+							<label style="color:indigo;" for="ustate"> State: </label>
+							<input class="inputalign" type="text" name="ustate" placeholder="State" autocomplete="on" size="15" maxlength="15" id="state"/>
+						</div>
+						
+						<div id="artistA" class="usertype">
+							<label style="color:indigo;"> If you're an artist, enter some background info:</label>
+							<textarea name="background" placeholder="Artist background info" id="artistBackground"></textarea>
+						</div>
+				  
+						<div class="option">
+								<input class="btn btn-default" type = "submit" value="Submit form" onclick="return validation();" />
+								<input class="btn btn-default" type = "reset" value="Reset form" />
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>  		
+	</body>
+</html>
